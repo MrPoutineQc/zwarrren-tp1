@@ -1,0 +1,4 @@
+/* Flou arrière-plan vidéo principale */
+.mainVideo {
+    filter: blur(6px);
+}
