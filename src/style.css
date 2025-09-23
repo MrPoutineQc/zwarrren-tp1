@@ -5,18 +5,12 @@
 
 
 /* HEADER */
-
 /* Flou arrière-plan vidéo principale */
 .mainVideo {
     filter: blur(6px);
 }
 
+/* Changement icon sur hover */
 .icon-slide-header:hover::before {
     content: "\F125";
-}
-
-.logo-navbar {
-    width: 160px;
-    height: auto;
-    /* garde les proportions */
 }
