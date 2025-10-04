@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./src/style.css">
 
     <link rel="icon" href="./assets/icon/cs2_16x16.png" sizes="16x16" type="image/x-icon">
     <link rel="icon" href="./assets/icon/cs2_16x16.png" sizes="32x32" type="image/x-icon">
@@ -31,21 +31,29 @@
         </div>
     </header>
 
-    <main>
-        <div class="card mt-5 col-12 border-0">
-            <div class="card-body mx-auto " style="max-width: 50%;">
-                <h5 class="h1 fw-bold display-4 card-title text-center">Un héritage lourd à porter</h5>
-                <p class="card-text text-center fs-5">Counter-Strike 2 arrive avec la tâche difficile de succéder à
-                    CS:GO, véritable
-                    pilier de l’e-sport. Les attentes étaient énormes : un moteur graphique modernisé, une meilleure
-                    fluidité, et surtout, préserver l’ADN compétitif qui a fait la réputation de la licence depuis plus
-                    de vingt ans.</p>
+    <main id="critique" class="container my-5">
+        
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="card card-hover border-0 shadow-lg p-4">
+                    <div class="card-body text-center">
+                        <h5 class="h1 fw-bold display-4 card-title mb-4">Un héritage lourd à porter</h5>
+                        <p class="card-text fs-5 mb-4">
+                            Counter-Strike 2 arrive avec la tâche difficile de succéder à CS:GO, véritable
+                            pilier de l’e-sport. Les attentes étaient énormes : un moteur graphique modernisé,
+                            une meilleure fluidité, et surtout, préserver l’ADN compétitif qui a fait la réputation
+                            de la licence depuis plus de vingt ans.
+                        </p>
 
-                <img src="https://picsum.photos/800/450" class="d-block mx-auto" style="width: 18rem;" alt="image-cs2">
+                        <video id="scrollVideo" autoplay muted loop class="w-100 rounded shadow">
+                            <source src="./assets/videos/cs2-beyond-global.mov" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="card mt-5 col-9 border-0">
+        <!-- <div class="card mt-5 col-9 border-0">
             <div class="card-body">
                 <img src="https://picsum.photos/800/450" class="img-fluid float-start me-5" style="width: 18rem;"
                     alt="image-cs2">
@@ -85,7 +93,7 @@
         </div>
 
         <div class="card mt-5 col-9 border-0">
-            <div class="card-body">
+            <div class="card-body text-bg-warning">
                 <img src="https://picsum.photos/800/450" class="img-fluid float-end ms-5" style="width: 18rem;"
                     alt="image-cs2">
 
@@ -96,7 +104,7 @@
                     franchise. Les ajustements à venir détermineront s’il deviendra aussi incontournable que son
                     prédécesseur.</p>
             </div>
-        </div>
+        </div> -->
 
     </main>
 </body>
