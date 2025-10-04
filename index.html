@@ -1,112 +1,138 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./src/style.css" />
 
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./src/style.css">
-
-    <link rel="icon" href="./assets/icon/cs2_16x16.png" sizes="16x16" type="image/x-icon">
-    <link rel="icon" href="./assets/icon/cs2_16x16.png" sizes="32x32" type="image/x-icon">
+    <link rel="icon" href="./assets/icon/cs2_16x16.png" sizes="16x16" type="image/x-icon" />
+    <link rel="icon" href="./assets/icon/cs2_16x16.png" sizes="32x32" type="image/x-icon" />
 
     <script src="./src/script.js" defer></script>
 
     <title>Critique - Counter-Strike 2</title>
-</head>
+  </head>
 
-<body data-bs-theme="dark">
-
+  <body data-bs-theme="dark" >
+    <!-- HEADER -->
     <header class="position-relative vh-100 overflow-hidden">
-        <video autoplay muted loop class="mainVideo position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1">
-            <source src="./assets/videos/cs2_trailer.mov" type="video/mp4">
-        </video>
+      <video autoplay muted loop class="mainVideo position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1">
+        <source src="./assets/videos/cs2_trailer.mov" type="video/mp4" />
+      </video>
 
-        <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-white">
-            <img class="mb-5 img-fluid w-50 w-md-50" src="./assets/images/cs2_logo.svg" alt="">
-            <p class="fw-semibold lead text-center text-md-start">CS2 : Révolution ou simple mise à jour ?</p>
-            <a href="#critique" class="bi-arrow-down-square display-5 text-warning icon-slide-header"></a>
-        </div>
+      <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-white">
+        <img class="mb-5 img-fluid w-50 w-md-50" src="./assets/images/cs2_logo.svg" alt="" />
+        <p class="fw-semibold lead text-center text-md-start">CS2 : Révolution ou simple mise à jour ?</p>
+        <a href="#critique" class="bi-arrow-down-square display-5 text-primary icon-slide-header"></a>
+      </div>
     </header>
 
-    <main id="critique" class="container my-5">
-        
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10">
-                <div class="card card-hover border-0 shadow-lg p-4">
-                    <div class="card-body text-center">
-                        <h5 class="h1 fw-bold display-4 card-title mb-4">Un héritage lourd à porter</h5>
-                        <p class="card-text fs-5 mb-4">
-                            Counter-Strike 2 arrive avec la tâche difficile de succéder à CS:GO, véritable
-                            pilier de l’e-sport. Les attentes étaient énormes : un moteur graphique modernisé,
-                            une meilleure fluidité, et surtout, préserver l’ADN compétitif qui a fait la réputation
-                            de la licence depuis plus de vingt ans.
-                        </p>
+    <!-- MAIN   -->
+    <main id="critique" class="container">
+      <div class="row justify-content-center my-5">
+        <div class="col-12 col-md-10">
+          <div class="card card-hover border-0 shadow-lg p-4 bg-primary">
+            <div class="card-body text-center">
+              <i class="text-secondary bi bi-trophy-fill"></i>
+              <h5 class="h1 fw-bold display-4 card-title mb-4"></i>Un héritage lourd à porter</h5>
+              <p class="card-text fs-5 mb-4">
+                Counter-Strike 2 arrive avec la tâche difficile de succéder à CS:GO, véritable pilier de l’e-sport. Les
+                attentes étaient énormes : un moteur graphique modernisé, une meilleure fluidité, et surtout, préserver
+                l’ADN compétitif qui a fait la réputation de la licence depuis plus de vingt ans.
+              </p>
 
-                        <video id="scrollVideo" autoplay muted loop class="w-100 rounded shadow">
-                            <source src="./assets/videos/cs2-beyond-global.mov" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
+              <video id="scrollVideo" autoplay muted loop class="w-100 rounded shadow">
+                <source src="./assets/videos/cs2-beyond-global.mov" type="video/mp4" />
+              </video>
             </div>
+          </div>
         </div>
+      </div>
 
-        <!-- <div class="card mt-5 col-9 border-0">
-            <div class="card-body">
-                <img src="https://picsum.photos/800/450" class="img-fluid float-start me-5" style="width: 18rem;"
-                    alt="image-cs2">
+      <div class="row justify-content-center my-5">
+        <div class="col-12 col-md-10">
+          <div class="card card-hover border-0 shadow-lg p-4 bg-secondary">
+            <div class="card-body text-center">
+              <i class="text-primary bi bi-cpu-fill"></i>
+              <h5 class="h1 fw-bold display-4 card-title mb-4">Un moteur Source 2 qui fait la différence</h5>
+              <p class="card-text fs-5 mb-4">
+                Le passage au moteur Source 2 apporte une vraie fraîcheur visuelle : textures plus détaillées,
+                éclairages dynamiques et fumigènes interactifs qui changent réellement le gameplay. Cependant, certains
+                joueurs ont remarqué un manque d’optimisation et des chutes de performance sur des configurations
+                moyennes.
+              </p>
 
-                <h5 class="h1 fw-bold card-title">Un moteur Source 2 qui fait la différence</h5>
-                <p class="card-text fs-5">Le passage au moteur Source 2 apporte une vraie fraîcheur visuelle : textures
-                    plus
-                    détaillées, éclairages dynamiques et fumigènes interactifs qui changent réellement le gameplay.
-                    Cependant, certains joueurs ont remarqué un manque d’optimisation et des chutes de performance sur
-                    des configurations moyennes.</p>
+              <video id="scrollVideo" autoplay muted loop class="w-100 rounded shadow">
+                <source src="./assets/videos/cs2-beyond-global.mov" type="video/mp4" />
+              </video>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="card mt-5 col-9 border-0">
-            <div class="card-body">
-                <img src="https://picsum.photos/800/450" class="img-fluid float-end ms-5" style="width: 18rem;"
-                    alt="image-cs2">
+      <div class="row justify-content-center my-5">
+        <div class="col-12 col-md-10">
+          <div class="card card-hover border-0 shadow-lg p-4 bg-primary">
+            <div class="card-body text-center">
+              <i class="text-secondary bi bi-fire"></i>
+              <h5 class="h1 fw-bold display-4 card-title mb-4">La même recette, avec quelques épices</h5>
+              <p class="card-text fs-5 mb-4">
+                CS2 reste fidèle à son gameplay précis et exigeant : un tir millimétré, des déplacements maîtrisés et
+                une économie stratégique. Les nouveautés sont discrètes mais efficaces, comme les grenades fumigènes
+                plus réalistes ou le tick rate amélioré, qui renforcent l’équité en compétition.
+              </p>
 
-                <h5 class="h1 fw-bold card-title">La même recette, avec quelques épices</h5>
-                <p class="card-text fs-5">CS2 reste fidèle à son gameplay précis et exigeant : un tir millimétré, des
-                    déplacements maîtrisés et une économie stratégique. Les nouveautés sont discrètes mais efficaces,
-                    comme les grenades fumigènes plus réalistes ou le tick rate amélioré, qui renforcent l’équité en
-                    compétition.</p>
+              <video id="scrollVideo" autoplay muted loop class="w-100 rounded shadow">
+                <source src="./assets/videos/cs2-beyond-global.mov" type="video/mp4" />
+              </video>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="card mt-5 col-9 border-0">
-            <div class="card-body">
-                <img src="https://picsum.photos/800/450" class="img-fluid float-start me-5" style="width: 18rem;"
-                    alt="image-cs2">
+      <div class="row justify-content-center my-5">
+        <div class="col-12 col-md-10">
+          <div class="card card-hover border-0 shadow-lg p-4 bg-secondary">
+            <div class="card-body text-center">
+              <i class="text-primary bi bi-people-fill"></i>
+              <h5 class="h1 fw-bold display-4 card-title mb-4">Une scène e-sport en transition</h5>
+              <p class="card-text fs-5 mb-4">
+                La communauté compétitive s’adapte progressivement à CS2. Les grandes équipes migrent, mais certaines
+                critiques persistent, notamment sur l’équilibrage et le manque de contenu au lancement. Malgré cela,
+                l’avenir s’annonce prometteur avec un suivi régulier de Valve.
+              </p>
 
-                <h5 class="h1 fw-bold card-title">Une scène e-sport en transition</h5>
-                <p class="card-text fs-5">La communauté compétitive s’adapte progressivement à CS2. Les grandes équipes
-                    migrent, mais certaines critiques persistent, notamment sur l’équilibrage et le manque de contenu au
-                    lancement. Malgré cela, l’avenir s’annonce prometteur avec un suivi régulier de Valve.</p>
+              <video id="scrollVideo" autoplay muted loop class="w-100 rounded shadow">
+                <source src="./assets/videos/cs2-beyond-global.mov" type="video/mp4" />
+              </video>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="card mt-5 col-9 border-0">
-            <div class="card-body text-bg-warning">
-                <img src="https://picsum.photos/800/450" class="img-fluid float-end ms-5" style="width: 18rem;"
-                    alt="image-cs2">
+      <div class="row justify-content-center my-5">
+        <div class="col-12 col-md-10">
+          <div class="card card-hover border-0 shadow-lg p-4 bg-primary">
+            <div class="card-body text-center">
+              <i class="text-secondary bi bi-rocket-takeoff-fill"></i>
+              <h5 class="h1 fw-bold display-4 card-title mb-4">Un nouveau départ imparfait, mais solide</h5>
+              <p class="card-text fs-5 mb-4">
+                CS2 n’est pas une révolution, mais une modernisation nécessaire. Avec son moteur plus moderne, son
+                gameplay peaufiné et sa base compétitive, il s’impose comme le futur de la franchise. Les ajustements à
+                venir détermineront s’il deviendra aussi incontournable que son prédécesseur.
+              </p>
 
-                <h5 class="h1 fw-bold card-title">Un nouveau départ imparfait, mais solide</h5>
-                <p class="card-text fs-5">CS2 n’est pas une révolution, mais une modernisation nécessaire. Avec son
-                    moteur
-                    plus moderne, son gameplay peaufiné et sa base compétitive, il s’impose comme le futur de la
-                    franchise. Les ajustements à venir détermineront s’il deviendra aussi incontournable que son
-                    prédécesseur.</p>
+              <video id="scrollVideo" autoplay muted loop class="w-100 rounded shadow">
+                <source src="./assets/videos/cs2-beyond-global.mov" type="video/mp4" />
+              </video>
             </div>
-        </div> -->
-
+          </div>
+        </div>
+      </div>
     </main>
-</body>
 
+  </body>
 </html>

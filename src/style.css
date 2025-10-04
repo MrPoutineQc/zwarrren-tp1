@@ -4,8 +4,7 @@
 }
 
 
-/* HEADER */
-/* Flou arrière-plan vidéo principale */
+/* Flou arrière-plan vidéo header */
 .mainVideo {
     filter: blur(6px);
 }
@@ -15,4 +14,24 @@
     content: "\F125";
 }
 
+/* Changement de couleur */
+.bg-primary {
+    background-color: #e38617 !important;
+}
 
+.bg-secondary {
+    background-color: #272a3b !important;
+}
+.text-primary {
+    color: #e38617 !important;
+}
+
+.text-secondary {
+    color: #272a3b !important;
+}
+
+/* Grandeur icon */
+
+.bi {
+    font-size: 5em;
+}
