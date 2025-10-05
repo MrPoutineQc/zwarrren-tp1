@@ -22,6 +22,7 @@
 .bg-secondary {
     background-color: #272a3b !important;
 }
+
 .text-primary {
     color: #e38617 !important;
 }
@@ -34,4 +35,45 @@
 
 .bi {
     font-size: 5em;
+}
+
+/* Fondu transparent header */
+header::after {
+    content: "";
+    position: absolute;
+    height: 10em;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, var(--bs-body-bg));
+}
+
+/* Bouton ouverture modal */
+.btn-modal {
+    background-color: #e38617;
+    color: white;
+    font-weight: bold;
+    border: solid 2px #e38617;
+    transform: scale(1);
+    transition:
+        transform 0.3s cubic-bezier(.1, -0.04, .42, 1.06),
+        background-color 0.3s cubic-bezier(.1, -0.04, .42, 1.06),
+        color 0.3s cubic-bezier(.1, -0.04, .42, 1.06);
+}
+
+.btn-modal:hover {
+    background-color: #272a3b;
+    border: solid 2px #e38617;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+/* ligne */
+
+hr {
+    border: 2px solid white;
+    border-radius: 1em;
+    width: 80%;
+    margin: 0 auto 20px;
 }
